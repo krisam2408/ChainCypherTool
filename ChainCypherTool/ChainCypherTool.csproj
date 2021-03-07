@@ -6,4 +6,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChainCypherLib\ChainCypherLib.csproj" />
+  </ItemGroup>
+
 </Project>

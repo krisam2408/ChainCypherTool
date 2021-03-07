@@ -2,9 +2,9 @@
 
 namespace ChainCypherLib.Exceptions
 {
-    public class WhiteChainException:Exception
+    internal class WhiteChainException:Exception
     {
-        public WhiteChainException(string property):base($"Property {property} is null or whitespace.")
+        internal WhiteChainException(string property):base($"Property {property} is null or whitespace.")
         {
             
         }

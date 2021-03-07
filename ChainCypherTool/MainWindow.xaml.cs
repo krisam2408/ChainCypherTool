@@ -23,6 +23,7 @@ namespace ChainCypherTool
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
