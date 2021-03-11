@@ -18,12 +18,27 @@ namespace ChainCypherTool
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Page
     {
+        private static MainWindow instance;
+        public static MainWindow Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new MainWindow();
+                return instance;
+            }
+            private set
+            {
+                instance = value;
+            }
+        }
+
         public MainWindow()
         {
+            Instance = this;
             InitializeComponent();
-
         }
     }
 }

@@ -8,6 +8,10 @@ namespace ChainCypherLib
 {
     internal static class Globals
     {
-        internal static string CypherKey = "keyChain.cyp";
+        internal readonly static string CypherKey = "keyChain.cyp";
+
+        internal readonly static string Base = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        public readonly static string Spectrum = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZçßñáàâäéèêëíìîïóòôöúùûüÇßÑÁÀÂÄÉÈÊËÍÌÎÏÓÒÔÖÚÙÛÜ @-_.:,;!¡?¿|#$~+*{}[]()<>/\\&\"'%=€°¬·ª´¨`^";
+        internal readonly static string[] NumberChains = { "null", "eins", "zwei", "drei", "vier", "fünf", "sexs", "sieb", "acht", "neun" };
     }
 }

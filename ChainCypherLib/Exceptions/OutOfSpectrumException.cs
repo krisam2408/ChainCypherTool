@@ -8,9 +8,7 @@ namespace ChainCypherLib.Exceptions
 {
     internal class OutOfSpectrumException:Exception
     {
-        public OutOfSpectrumException(int cypherOffset) : base($"Given cypher is {cypherOffset} elements off of spectrum.")
-        {
-
-        }
+        public OutOfSpectrumException(char unsupportedChar, Chains chain) : base(chain == Chains.Spectrum ? $"{unsupportedChar} is not a supported character for encoding." : $"{unsupportedChar} is not a supported character for decoding.") { }
+        public OutOfSpectrumException(int cypherOffset) : base($"Given cypher is {cypherOffset} elements off of spectrum.") { }
     }
 }
